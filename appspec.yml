@@ -1,14 +1,14 @@
 version: 0.0
 os: linux
 files:
-  - source: /*
+  - source: /New.txt
     destination: /home/ubuntu/test/
-hooks:
-  BeforeInstall:
-    - location: before.sh
-      timeout: 300
-      runas: root
-  AfterInstall:
-    - location: end.sh
-      timeout: 300
-      runas: root
+# hooks:
+#   BeforeInstall:
+#     - location: before.sh
+#       timeout: 300
+#       runas: root
+#   AfterInstall:
+#     - location: end.sh
+#       timeout: 300
+#       runas: root

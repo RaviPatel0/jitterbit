@@ -1,5 +1,14 @@
 version: 0.0
 os: linux
 files:
-  - source: ./*
+  - source: /*
     destination: /home/ubuntu/test/
+hooks:
+  BeforeInstall:
+    - location: before.py
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: end.py
+      timeout: 300
+      runas: root

@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /New.txt
+  - source: /*
     destination: /home/ubuntu/test/
 # hooks:
 #   BeforeInstall:

@@ -5,10 +5,10 @@ files:
     destination: /home/ubuntu/test/
 hooks:
   BeforeInstall:
-    - location: before.py
+    - location: before.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: end.py
+    - location: end.sh
       timeout: 300
       runas: root
